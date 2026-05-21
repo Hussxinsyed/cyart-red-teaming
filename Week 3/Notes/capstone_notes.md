@@ -17,5 +17,4 @@ Tools studied:
 - Nmap
 - Metasploit
 
-Goal:
-Understand how different phases connect during a red team engagement.
+
