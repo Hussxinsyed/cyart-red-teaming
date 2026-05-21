@@ -2,31 +2,29 @@
 
 ## Executive Summary
 
-This report summarizes the study of reconnaissance, initial access, exploitation, and lateral movement concepts in a controlled lab environment. Multiple tools were reviewed to understand red team workflows and attack stages.
+This report summarizes the practical and theoretical activities performed during the Red Team learning tasks. The objective was to understand reconnaissance techniques, initial access methods, exploitation concepts, lateral movement, persistence methods, and reporting practices within a controlled lab environment.
+
+Different tools and methodologies were reviewed to understand how attackers gather information, identify targets, and simulate attack workflows ethically.
+
+---
 
 ## Findings
 
-- Nmap identified running services on the target machine.
-- Service version detection helped understand running applications.
-- Metasploit was used in a controlled lab environment to understand vulnerability assessment workflows.
+### Reconnaissance
 
-## Recommendations
+Recon-ng and Shodan were explored to understand information gathering techniques.
 
-- Keep systems updated.
-- Disable unnecessary services.
-- Monitor network activity regularly.
-- Use strong passwords and authentication controls.
+Reconnaissance helps collect publicly available information and identify potential targets before further actions.
 
-## Attack Flow
+Shodan was used to search exposed services and observe internet-facing systems.
 
-Recon
-↓
-Initial Access
-↓
-Exploitation
-↓
-Lateral Movement
-↓
-Persistence
-↓
-Reporting
+---
+
+### Network Scanning
+
+Nmap was used to identify open ports and running services on the target machine.
+
+The command used:
+
+```bash
+nmap -sV 192.168.78.128
